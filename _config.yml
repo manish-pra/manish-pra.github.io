@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Manish Prajapat"
   avatar           : "/assets/images/Manish_Prajapat.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Doctoral fellow at ETH AI Center, Zurich. Interested in Reinforcement Learning and Controls."
+  location         : "Zurich | Switzerland"
   email            : "manishp@ai.ethz.ch"
   links:
     - label: "Email"
