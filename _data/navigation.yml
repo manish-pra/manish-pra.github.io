@@ -7,7 +7,7 @@ main:
   - title: "Blogs"
     url: /year-archive/
   - title: "About Me"
-    url: /_pages/about/
+    url: /about/
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Posts"
