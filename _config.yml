@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Manish Prajapat"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Manish Prajapat"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -108,11 +108,11 @@ author:
   avatar           : "/assets/images/Manish_Prajapat.jpg"
   bio              : "Doctoral fellow at ETH AI Center, Zurich. Interested in Reinforcement Learning and Controls."
   location         : "Zurich | Switzerland"
-  email            : "manishp@ai.ethz.ch"
+  email            :
   links:
-    - label: "Email"
+    - label: "manishp@ai.ethz.ch"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:manishp@ai.ethz.ch"
+      url: "mailto:manishp@ai.ethz.ch"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
