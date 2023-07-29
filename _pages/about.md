@@ -2,7 +2,7 @@
 permalink: /about/
 # title: "About"
 ---
-## About
+<!-- ## About -->
 
 Broadly, I am interested in reinforcement learning and control theory. Following my master thesis on competitive policy optimization, In my PhD i am exploring the fundamental ideas from game theory, control theory and utilising them for optimization in sequential decision-making problems for safe execution in the real world. 
 
@@ -23,6 +23,10 @@ Broadly, I am interested in reinforcement learning and control theory. Following
   * Overall GPA: 9.35/10.0
 
 ## Publications
+
+* **Manish Prajapat**, Mojmir Mutny, Melanie Zeilinger, and Andreas Krause, **[Submodular Reinforcement Learning.](https://arxiv.org/pdf/2307.13372.pdf)** .
+
+* **Manish Prajapat**, Matteo Turchetta, Melanie Zeilinger, and Andreas Krause, **[Near-optimal multi-agent learning for safe coverage control.](https://arxiv.org/pdf/2210.06380.pdf)** _Advances in Neural Information Processing Systems 2022_.
 
 * **Manish Prajapat**, Kamyar Azizzadenesheli, Alexander Liniger, Yisong Yue and Anima Anandkumar, **[Competitive Policy Optimization](https://arxiv.org/pdf/2006.10611.pdf)** _Uncertainity in Artificial Intelligence 2021_.
 

@@ -24,7 +24,7 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family           : $serif !default;
+$global-font-family           : $sans-serif !default;
 $header-font-family           : $sans-serif !default;
 $caption-font-family          : $serif !default;
 
@@ -50,17 +50,17 @@ $h-size-6: 1em !default; // ~16px
 @import "minimal-mistakes"; // main partials
 
 html {
-    font-size: 16px; // change to whatever
+    font-size: 13px; // change to whatever
   
     @include breakpoint($medium) {
-      font-size: 18px; // change to whatever
+      font-size: 15px; // change to whatever
     }
   
     @include breakpoint($large) {
-      font-size: 20px; // change to whatever
+      font-size: 17px; // change to whatever
     }
   
     @include breakpoint($x-large) {
-      font-size: 22px; // change to whatever
+      font-size: 19px; // change to whatever
     }
   }
