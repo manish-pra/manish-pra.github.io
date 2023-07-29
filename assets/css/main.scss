@@ -17,6 +17,13 @@ $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 $sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
 
+$serif              : "PT Serif", Georgia, Times, serif;
+$sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+
+// $global-font-family : $serif;
+// $header-font-family : $sans-serif-narrow;
+
+
 /* serif typefaces */
 $georgia: Georgia, serif !default;
 $times: Times, serif !default;
@@ -64,3 +71,5 @@ html {
       font-size: 19px; // change to whatever
     }
   }
+
+  $paragraph-indent: true
