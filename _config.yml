@@ -58,8 +58,8 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
+  name   : "Manish Prajapat"
+  avatar : "/assets/images/Manish_Prajapat.jpg"
   bio    : "Doctoral fellow at ETH AI Center. Interested in reinforcement learning and controls."
   links:
     - label: "Website"
