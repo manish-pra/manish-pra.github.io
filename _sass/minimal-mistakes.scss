@@ -11,11 +11,11 @@
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
 
-/* Font Awesome - icon font set */
-@import "minimal-mistakes/vendor/font-awesome/font-awesome";
+// /* Font Awesome - icon font set */
+// @import "minimal-mistakes/vendor/font-awesome/font-awesome";
 
-/* Academicon - academic icon font set */
-@import "minimal-mistakes/vendor/academicons/academicons";
+// /* Academicon - academic icon font set */
+// @import "minimal-mistakes/vendor/academicons/academicons";
 
 @import "minimal-mistakes/vendor/magnific-popup/magnific-popup"; // Magnific Popup
 
