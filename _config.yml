@@ -112,46 +112,46 @@ author:
   bio              : "Doctoral fellow at ETH AI Center, Zurich. Interested in Reinforcement Learning and Controls."
   location         : "Zurich | Switzerland"
   email            : "mailto:manishp@ai.ethz.ch"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : "manish-pra"
-  google_plus      :
-  google_scholar   : "qnobH84AAAAJ"
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         : "manish-prajapat-eth"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
-  tumblr           :
-  twitter          : *twitter
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  # links:
-  #   - label: "manishp@ai.ethz.ch"
-  #     icon: "fas fa-fw fa-envelope-square"
-  #     url: "mailto:manishp@ai.ethz.ch"
-  #   - label: "Website"
-  #     icon: "fas fa-fw fa-link"
-  #     # url: "https://your-website.com"
-  #   - label: "@Manish8Prajapat"
-  #     icon: "fab fa-fw fa-twitter-square"
-  #     url: "https://twitter.com/Manish8Prajapat"
-  #   - label: "manish-pra"
-  #     icon: "fab fa-fw fa-github"
-  #     url: "https://github.com/manish-pra"
-  #   - label: "Instagram"
-  #     icon: "fab fa-fw fa-instagram"
-  #     # url: "https://instagram.com/"
+  # uri              :
+  # bitbucket        :
+  # codepen          :
+  # dribbble         :
+  # flickr           :
+  # facebook         :
+  # foursquare       :
+  # github           : "manish-pra"
+  # google_plus      :
+  # google_scholar   : "qnobH84AAAAJ"
+  # keybase          :
+  # instagram        :
+  # lastfm           :
+  # linkedin         : "manish-prajapat-eth"
+  # pinterest        :
+  # soundcloud       :
+  # stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  # steam            :
+  # tumblr           :
+  # twitter          : *twitter
+  # vine             :
+  # weibo            :
+  # xing             :
+  # youtube          :
+  links:
+    - label: "manishp@ai.ethz.ch"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:manishp@ai.ethz.ch"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   # url: "https://your-website.com"
+    - label: "@Manish8Prajapat"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/Manish8Prajapat"
+    - label: "manish-pra"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/manish-pra"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   # url: "https://instagram.com/"
 
 # Site Footer
 footer:
