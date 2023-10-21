@@ -131,28 +131,34 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=qnobH84AAAAJ&hl=en"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
+    - label: "@Manish8Prajapat"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/Manish8Prajapat"
+    - label: "manishp@ai.ethz.ch"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:manishp@ai.ethz.ch"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
+      # url: "https://facebook.com/"
+    - label: "manish-pra"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/manish-pra"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      # url: "https://instagram.com/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=qnobH84AAAAJ&hl=en"
 
 
 # Reading Files
