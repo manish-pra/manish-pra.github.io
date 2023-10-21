@@ -19,7 +19,7 @@ github_username: manish-pra
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "Manish Prajapat"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Manish Prajapat"
@@ -33,9 +33,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "blog-zwizf3t6kl" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -84,7 +84,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : &twitter "Manish8Prajapat"
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -111,57 +111,49 @@ author:
   avatar           : "/assets/images/Manish_Prajapat.jpg"
   bio              : "Doctoral fellow at ETH AI Center, Zurich. Interested in Reinforcement Learning and Controls."
   location         : "Zurich | Switzerland"
-  email            : "mailto:manishp@ai.ethz.ch"
-  # uri              :
-  # bitbucket        :
-  # codepen          :
-  # dribbble         :
-  # flickr           :
-  # facebook         :
-  # foursquare       :
-  # github           : "manish-pra"
-  # google_plus      :
-  # google_scholar   : "qnobH84AAAAJ"
-  # keybase          :
-  # instagram        :
-  # lastfm           :
-  # linkedin         : "manish-prajapat-eth"
-  # pinterest        :
-  # soundcloud       :
-  # stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  # steam            :
-  # tumblr           :
-  # twitter          : *twitter
-  # vine             :
-  # weibo            :
-  # xing             :
-  # youtube          :
+  email            :
   links:
     - label: "manishp@ai.ethz.ch"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:manishp@ai.ethz.ch"
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   # url: "https://your-website.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
     - label: "@Manish8Prajapat"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/Manish8Prajapat"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
     - label: "manish-pra"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/manish-pra"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   # url: "https://instagram.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/Manish8Prajapat"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/manish-pra"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
+
 
 # Reading Files
 include:
@@ -303,12 +295,8 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
