@@ -1,3 +1,48 @@
+# Shortcuts to work on this
+
+1. Launch locally: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+```
+bundle install
+bundle exec jekyll serve
+```
+2. _pages/xyz.md : on the header of xyz.md you can format that page locally like using header, layout, etc.
+
+3. assets/css/main.scss overwrite all other other css files before the launch
+
+4. 
+``` 
+gem install safe_yaml -v '1.0.5' --source 'https://rubygems.org/'
+```
+
+5. May be just the first one is enough; it is used to increase the max users number
+
+```
+sudo sh -c "echo fs.inotify.max_user_watches=524288 >> /etc/sysctl.conf"
+sudo sysctl -p
+
+sudo sh -c "echo fs.inotify.max_user_watches=524288 > /etc/sysctl.d/40-max-user-watches.conf"
+sudo sysctl --system
+```
+
+6. Uncomment the navigation part
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)

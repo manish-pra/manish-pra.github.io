@@ -1,16 +1,16 @@
-# main links
-main:
-  - title: "Publications"
-    url: /publications/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Blogs"
-    url: /year-archive/
-  - title: "About Me"
-    url: /about/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-  - title: "Posts"
-    url: /posts/  
-  - title: "Posts by Category"
-    url: /categories/    
+# # main links
+# main:
+#   - title: "Publications"
+#     url: /publications/
+#   # - title: "About"
+#   #   url: https://mmistakes.github.io/minimal-mistakes/about/
+#   - title: "Blogs"
+#     url: /year-archive/
+#   - title: "About Me"
+#     url: /about/
+#   # - title: "Sitemap"
+#   #   url: /sitemap/
+#   - title: "Posts"
+#     url: /posts/  
+#   - title: "Posts by Category"
+#     url: /categories/    

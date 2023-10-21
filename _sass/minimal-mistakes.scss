@@ -10,7 +10,15 @@
 /* Mixins and functions */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
+
+/* Font Awesome - icon font set */
+@import "minimal-mistakes/vendor/font-awesome/font-awesome";
+
+/* Academicon - academic icon font set */
+@import "minimal-mistakes/vendor/academicons/academicons";
+
 @import "minimal-mistakes/vendor/magnific-popup/magnific-popup"; // Magnific Popup
+
 @import "minimal-mistakes/vendor/susy/susy";
 @import "minimal-mistakes/mixins";
 
