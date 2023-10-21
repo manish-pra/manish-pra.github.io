@@ -32,8 +32,10 @@ excerpt: "Doctoral fellow at ETH AI Center<br><br>"
 ---
 
 ## Brief Bio
-I am a doctoral researcher AI Center, ETH Zurich, working with [Andreas Krause](https://las.inf.ethz.ch/krausea) and [Melanie Zeilinger](https://idsc.ethz.ch/research-zeilinger/people/person-detail.MTQyNzM3.TGlzdC8xOTI5LDg4NTM5MTE3.html). My research interest is sequential decision making under complex scenerios, e.g., when the feedback is not just state but history dependent, a few examples are convex RL, non-additive RL. I am also interested in safety aspect of it, epecially when deploying in uncertain and a-priori unknown environments. (TODO)
+<div style="text-align: justify">I am a doctoral researcher AI Center, ETH Zurich, working with <a href="https://las.inf.ethz.ch/krausea">Andreas Krause</a> and <a href="https://idsc.ethz.ch/research-zeilinger/people/person-detail.MTQyNzM3.TGlzdC8xOTI5LDg4NTM5MTE3.html">Melanie Zeilinger</a>. My research interest is sequential decision making under complex scenerios, e.g., when the feedback is not just state but history dependent, a few examples are convex RL, non-additive RL. I am also interested in safety aspect of it, epecially when deploying in uncertain and a-priori unknown environments. (TODO)
+</div>
 
+<div style="text-align: justify">
 My academic journey began with a Bachelor's in Mechanical Engineering from IIT Madras, followed by a transformative experience at ETH Zurich, where I earned my Master's degree in Robotics. During my Master's program, I had the unique opportunity to conduct my thesis research at Caltech, focusing on competitive policy optimization for multi-agent reinforcement learning.
 
 Currently, I'm immersed in a groundbreaking Ph.D. project, exploring reinforcement learning with a focus on complex objectives and non-Markovian rewards. This innovative framework has the potential to revolutionize fields like Bayesian experiment design, informative path planning, and molecule design, making AI more adaptive and versatile.
@@ -42,7 +44,7 @@ My interest in AI goes beyond theory; I'm deeply committed to ensuring safety in
 
 Throughout my academic journey, I've had the privilege of working with the AMZ Driveless Team, leading us to victory in two world championships. From June 2020 to September 2021, I served as a Research Engineer in Sensor Fusion at FIXPOSITION AG, Zurich, Switzerland.
 
-I'm also dedicated to sharing knowledge, having served as a Teaching Assistant for courses in Probabilistic Artificial Intelligence, Model Predictive Control, and Autonomous Mobility on Demand: From Car to Fleet.
+I'm also dedicated to sharing knowledge, having served as a Teaching Assistant for courses in Probabilistic Artificial Intelligence, Model Predictive Control, and Autonomous Mobility on Demand: From Car to Fleet.</div>
 
 ## Publications 
 
