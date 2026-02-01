@@ -7,59 +7,107 @@ title: <br><br><br><br>Manish Prajapat
 permalink: /
 header:
   overlay_color: "#000"
-  overlay_filter: "0.5"
+  overlay_filter: "0.4"
   overlay_image: /assets/images/sta_zentrum_hauptgebaeude_044.jpg
-#   caption: "Photo: [Olly McMillan](https://www.youtube.com/watch?v=kQkZeXHfgwA&t=1s)"
-excerpt: "Doctoral fellow at ETH AI Center<br><br>"
+  caption: "ETH Zurich Main Building"
+excerpt: "Doctoral Researcher at ETH AI Center<br>Reinforcement Learning • Control Theory • Safe AI<br><br>"
 classes: wide
-# feature_row:
-#   - image_path: /assets/images/uncertainty.jpg
-#     alt: "Semantic Segmentation"
-#     title: ""
-#     url: "blog"
-#     btn_label: "Blog"
-#     btn_class: "btn--inverse"
-#   - image_path: /assets/images/alex_google_talk.png
-#     title: ""
-#     url: "talks"
-#     btn_label: "Talks"
-#     btn_class: "btn--inverse"
-#   - image_path: /assets/images/poster.jpg
-#     alt: "CVPR 2017 Conference Poster"
-#     title: ""
-#     url: "publications"
-#     btn_label: "Publications"
-#     btn_class: "btn--inverse"
+feature_row:
+  - image_path: /assets/images/research_icon.png
+    alt: "Research"
+    title: "Research"
+    excerpt: "Submodular RL, Safe Multi-Agent Learning, Competitive Policy Optimization"
+    url: "/research/"
+    btn_label: "Learn More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/publications_icon.png
+    alt: "Publications"
+    title: "Publications"
+    excerpt: "NeurIPS, UAI, JFR, ICRA and more - advancing the frontiers of AI safety"
+    url: "/publications/"
+    btn_label: "View Papers"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/experience_icon.png
+    alt: "Experience"
+    title: "Experience"
+    excerpt: "ETH Zurich, Caltech, AMZ Racing, Fixposition AG"
+    url: "/experience/"
+    btn_label: "Explore"
+    btn_class: "btn--primary"
 ---
 
-## Brief Bio
+## About Me
 
-<div style="text-align: justify"> <span style="font-size: 18px;"> I'm a doctoral researcher AI Center, ETH Zurich, where I collaborate with <a href="https://las.inf.ethz.ch/krausea">Andreas Krause</a> and <a href="https://idsc.ethz.ch/research-zeilinger/people/person-detail.MTQyNzM3.TGlzdC8xOTI5LDg4NTM5MTE3.html">Melanie Zeilinger</a>. My research focuses on sequential decision making under complex objectives, e.g., non-Markovian rewards, convex functionals, non-additive RL. Typically these are not just hard, but as we show NP-Hard even to approximate upto any constant factor. However, these frameworks have significant potential applications in various fields, including experiment design, informative path planning, molecule design, etc. I am interested in developing practical algorithms that are atleast conditionally provable. Also, I have strong interest in safety aspect of these algorithm, especially for autonomous execution in unpredictable environments with a-priori unknown safety constraints. Our goal is to guarentee task completion in finite time while being provably safe for complicated systems.
+<div style="text-align: justify; font-size: 18px; line-height: 1.6;"> 
+I'm a doctoral researcher at the <a href="https://ai.ethz.ch/">ETH AI Center</a>, where I collaborate with <a href="https://las.inf.ethz.ch/krausea">Andreas Krause</a> and <a href="https://idsc.ethz.ch/research-zeilinger/people/person-detail.MTQyNzM3.TGlzdC8xOTI5LDg4NTM5MTE3.html">Melanie Zeilinger</a>. My research focuses on <strong>sequential decision making under complex objectives</strong>, including non-Markovian rewards, convex functionals, and non-additive reinforcement learning.
 <br><br>
-Overall my research spans a range of topic including reinforcement learning, active learning, model predictive control, Gaussian processes, policy gradients, Bayesian optimization, complexity analysis, submodularity, robotics, etc.
+While these problems are theoretically challenging—often NP-Hard even to approximate—they have significant applications in <em>experiment design</em>, <em>informative path planning</em>, and <em>molecule design</em>. I develop practical algorithms with conditional provable guarantees, with a strong emphasis on <strong>safety aspects</strong> for autonomous execution in unpredictable environments.
 <br><br>
-I obtained a Master's in Robotics from ETH Zurich and a Bachelor's in Mechanical Engineering from IIT Madras. During my Master's, I did my thesis at Caltech, focusing on competitive policy optimization for multi-agent reinforcement learning working with Yisong Yue, Kamyar Azizzadenesheli and Anima Anandkumar. Moreover, I was a member of the Formula Student Driverless team at <a href="https://www.amzracing.ch/en">AMZ Racing</a>, ETH Zurich, where we designed an autonomous race car. We achieved notable success, winning both the FS Germany and FS Italy 2018 championships. Before starting my PhD, I worked for 1.5 years as Research engineer at <a href="https://www.fixposition.com/">Fixposition AG</a> Zurich, working on developing sensor fusion algorithms for Autonomous robots. 
-Priorly, I also interned at <a href="https://www.fixposition.com/">Fixposition</a> Zurich, <a href="https://wiproconsumercare.com/">Wipro FMCG</a> and <a href="https://tonboimaging.com/">Tonbo Imaging</a>, Bangalore. During my doctoral studies, I hold <a href="https://ai.ethz.ch/research/consulting.html">AI/ML consulting services</a> at ETH AI Center and has been teaching assistant for Probabilistic AI, Model predictive control, Autonomous Mobility on Demand : From Car to Fleet courses at ETH Zurich.
-</span>
+My research spans <strong>reinforcement learning</strong>, <strong>active learning</strong>, <strong>model predictive control</strong>, <strong>Gaussian processes</strong>, <strong>Bayesian optimization</strong>, and <strong>robotics</strong>.
 </div>
 
-## Publications 
+## Recent Highlights
 
-<!-- For a complete list of publications, please refer to <a href="https://scholar.google.co.uk/citations?user=hE2mTp4AAAAJ" itemprop="sameAs"><i class="ai ai-fw ai-google-scholar-square" aria-hidden="true"></i>Google Scholar</a>. -->
+<div class="notice--info">
+  <h4>🎯 Latest Research</h4>
+  <p><strong>Submodular Reinforcement Learning</strong> - Bridging submodular optimization with RL for complex reward structures</p>
+</div>
 
-* Manish Prajapat, Mojmir Mutny, Melanie Zeilinger, and Andreas Krause, **[Submodular Reinforcement Learning.](https://arxiv.org/pdf/2307.13372.pdf)**
+<div class="notice--success">
+  <h4>🏆 Recent Achievement</h4>
+  <p><strong>NeurIPS 2022</strong> - "Near-optimal multi-agent learning for safe coverage control" accepted</p>
+</div>
 
-* Manish Prajapat, Matteo Turchetta, Melanie Zeilinger, and Andreas Krause, **[Near-optimal multi-agent learning for safe coverage control.](https://arxiv.org/pdf/2210.06380.pdf)** _Advances in Neural Information Processing Systems (NeurIPS) 2022_.
+{% include feature_row %}
 
-* Manish Prajapat, Kamyar Azizzadenesheli, Alexander Liniger, Yisong Yue and Anima Anandkumar, **[Competitive Policy Optimization](https://arxiv.org/pdf/2006.10611.pdf)** _Uncertainity in Artificial Intelligence (UAI) 2021_.
+## Academic Journey
 
-* Manish Prajapat, Vishwajeet Sikchi, Javeed Shaikh Mohammed  and S. Sujatha, **[Proof-of-concept of a Stair-climbing Add-On Device for Wheelchairs](https://www.sciencedirect.com/science/article/pii/S1350453320301466)**. _Published at Elsevier journal of Medical Engineering and Physics 2020_.
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; color: white; margin: 20px 0;">
+  <h3 style="color: white; margin-top: 0;">🎓 Education & Experience</h3>
+  <ul style="list-style: none; padding: 0;">
+    <li style="margin: 10px 0;">📍 <strong>PhD Candidate</strong> - ETH AI Center (2021-Present)</li>
+    <li style="margin: 10px 0;">🎯 <strong>Master's Thesis</strong> - Caltech (Yisong Yue, Anima Anandkumar)</li>
+    <li style="margin: 10px 0;">🏎️ <strong>Formula Student</strong> - AMZ Racing ETH (Champions 2018)</li>
+    <li style="margin: 10px 0;">🔬 <strong>Research Engineer</strong> - Fixposition AG</li>
+    <li style="margin: 10px 0;">🏛️ <strong>M.Sc. Robotics</strong> - ETH Zurich (GPA: 5.64/6.0)</li>
+    <li style="margin: 10px 0;">🏛️ <strong>B.Tech Mechanical</strong> - IIT Madras (GPA: 9.35/10.0)</li>
+  </ul>
+</div>
 
-* Juraj Kabzan, Miguel, Victor Reijgwart, Hubertus Hendrikx, Claas Ehmke, Manish Prajapat, et. al. **[AMZ Driverless: The Full Autonomous Racing System](https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21977)**  _Published by Journal of field robotics (JFR) 2020_.
+## Selected Publications
 
-* *Nikhil Gosala *, Andreas Bühler *, Manish Prajapat *, Claas Ehmke *, Mehak Gupta *, Ramya Sivanesan *,  Abel Roman Gawel, Mark Pfeiffer, Mathias Bürki, Inkyu Sa, Renaud Dubé and Roland Siegwart, **[Redundant Perception and State Estimation for Reliable Autonomous Racing](https://arxiv.org/pdf/1809.10099.pdf)**. _Presented at ICRA 2019_. 
+<div class="publications-grid">
 
-* Manish Prajapat, Vishwajeet Sikchi and S. Sujatha, **[Add-on Device to Assist in Stair Climbing of wheelchairs](https://drive.google.com/file/d/15xVB3g6c9pXuKp0zgLWIFD6HoyQha1HV/view)**. _Presented at 3rd Indian National Conference on Applied Mechanics (INCAM 2017)_. Recieved **Best Paper Award**.
+<div class="publication-item">
+  <div class="pub-badge">Latest</div>
+  <h4><a href="https://arxiv.org/pdf/2307.13372.pdf">Submodular Reinforcement Learning</a></h4>
+  <p class="authors"><strong>Manish Prajapat</strong>, Mojmir Mutny, Melanie Zeilinger, Andreas Krause</p>
+  <p class="venue">Under Review</p>
+  <p class="description">Bridging submodular optimization with reinforcement learning for complex reward structures.</p>
+</div>
+
+<div class="publication-item">
+  <div class="pub-badge neurips">NeurIPS 2022</div>
+  <h4><a href="https://arxiv.org/pdf/2210.06380.pdf">Near-optimal multi-agent learning for safe coverage control</a></h4>
+  <p class="authors"><strong>Manish Prajapat</strong>, Matteo Turchetta, Melanie Zeilinger, Andreas Krause</p>
+  <p class="venue">Advances in Neural Information Processing Systems (NeurIPS) 2022</p>
+  <p class="description">Multi-agent reinforcement learning with safety guarantees for coverage control problems.</p>
+</div>
+
+<div class="publication-item">
+  <div class="pub-badge uai">UAI 2021</div>
+  <h4><a href="https://arxiv.org/pdf/2006.10611.pdf">Competitive Policy Optimization</a></h4>
+  <p class="authors"><strong>Manish Prajapat</strong>, Kamyar Azizzadenesheli, Alexander Liniger, Yisong Yue, Anima Anandkumar</p>
+  <p class="venue">Uncertainty in Artificial Intelligence (UAI) 2021</p>
+  <p class="description">Novel approach to multi-agent reinforcement learning through competitive optimization.</p>
+</div>
+
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <a href="/publications/" class="btn btn--primary btn--large">View All Publications</a>
+  <a href="https://scholar.google.com/citations?user=qnobH84AAAAJ&hl=en" class="btn btn--info btn--large">Google Scholar</a>
+</div>
 
 <!-- <div id='featured'></div>
 

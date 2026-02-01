@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Manish Prajapat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .blog-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+        
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .blog-post {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-post h2 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-meta {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .blog-excerpt {
+            color: #475569;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .coming-soon {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #64748b;
+        }
+        
+        .coming-soon i {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Manish Prajapat</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#research" class="nav-link">Research</a>
+                <a href="index.html#publications" class="nav-link">Publications</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>Research Blog</h1>
+            <p>Thoughts on AI, research, and the future of autonomous systems</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <div class="blog-container">
+        <!-- Sample Blog Posts -->
+        <article class="blog-post">
+            <h2>The Future of Safe Reinforcement Learning</h2>
+            <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                <span><i class="fas fa-tag"></i> AI Safety</span>
+                <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <p class="blog-excerpt">
+                As AI systems become more prevalent in safety-critical applications, the need for provably safe 
+                reinforcement learning algorithms becomes paramount. In this post, I explore the current challenges 
+                and future directions in safe RL research...
+            </p>
+            <a href="#" class="read-more">Read more →</a>
+        </article>
+
+        <article class="blog-post">
+            <h2>Submodular Optimization Meets Reinforcement Learning</h2>
+            <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i> February 28, 2024</span>
+                <span><i class="fas fa-tag"></i> Research</span>
+                <span><i class="fas fa-clock"></i> 8 min read</span>
+            </div>
+            <p class="blog-excerpt">
+                Traditional reinforcement learning assumes additive reward structures, but many real-world problems 
+                exhibit submodular properties. This post delves into our recent work on bridging submodular 
+                optimization with RL...
+            </p>
+            <a href="#" class="read-more">Read more →</a>
+        </article>
+
+        <article class="blog-post">
+            <h2>Lessons from Building Autonomous Race Cars</h2>
+            <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i> January 20, 2024</span>
+                <span><i class="fas fa-tag"></i> Robotics</span>
+                <span><i class="fas fa-clock"></i> 6 min read</span>
+            </div>
+            <p class="blog-excerpt">
+                During my time with AMZ Racing at ETH Zurich, we built championship-winning autonomous race cars. 
+                This experience taught me valuable lessons about real-world AI deployment, sensor fusion, and 
+                the importance of robust systems...
+            </p>
+            <a href="#" class="read-more">Read more →</a>
+        </article>
+
+        <!-- Coming Soon Message -->
+        <div class="coming-soon">
+            <i class="fas fa-pen-fancy"></i>
+            <h3>More Posts Coming Soon!</h3>
+            <p>I'm currently working on several blog posts about my research and experiences. Stay tuned for more insights into AI safety, reinforcement learning, and autonomous systems.</p>
+            <p>In the meantime, feel free to check out my <a href="index.html#publications" style="color: #2563eb;">publications</a> or <a href="index.html#contact" style="color: #2563eb;">get in touch</a>!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Manish Prajapat. All rights reserved.</p>
+                <p>Built with ❤️ for advancing AI safety and research</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

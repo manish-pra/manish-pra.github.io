@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Prajapat - AI Researcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Manish Prajapat</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Manish Prajapat</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Doctoral Researcher at ETH AI Center</h2>
+                    <p class="hero-description">
+                        I develop theoretically grounded algorithms for <strong>safe reinforcement learning</strong> 
+                        and <strong>multi-agent systems</strong>, with applications in autonomous robotics and AI safety.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#research" class="btn btn-primary">View Research</a>
+                        <a href="#publications" class="btn btn-secondary">Publications</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://scholar.google.com/citations?user=qnobH84AAAAJ&hl=en" target="_blank">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://github.com/manish-pra" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/Manish8Prajapat" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:manishp@ai.ethz.ch">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/images/Manish_Prajapat.jpg" alt="Manish Prajapat" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        I'm a doctoral researcher at the <strong>ETH AI Center</strong>, where I collaborate with 
+                        <a href="https://las.inf.ethz.ch/krausea" target="_blank">Andreas Krause</a> and 
+                        <a href="https://idsc.ethz.ch/research-zeilinger/people/person-detail.MTQyNzM3.TGlzdC8xOTI5LDg4NTM5MTE3.html" target="_blank">Melanie Zeilinger</a>.
+                    </p>
+                    <p>
+                        My research focuses on <strong>sequential decision making under complex objectives</strong>, 
+                        including non-Markovian rewards, convex functionals, and non-additive reinforcement learning. 
+                        While these problems are theoretically challenging—often NP-Hard even to approximate—they have 
+                        significant applications in experiment design, informative path planning, and molecule design.
+                    </p>
+                    <p>
+                        I develop practical algorithms with conditional provable guarantees, with a strong emphasis on 
+                        <strong>safety aspects</strong> for autonomous execution in unpredictable environments.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Citations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Top Venues</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Awards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Areas</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    My work spans reinforcement learning, control theory, and AI safety
+                </p>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Submodular Reinforcement Learning</h3>
+                    <p>
+                        Bridging submodular optimization with RL to handle non-additive reward structures 
+                        in experiment design and informative path planning.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Submodularity</span>
+                        <span class="tag">Non-Markovian</span>
+                        <span class="tag">Approximation</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe Multi-Agent Learning</h3>
+                    <p>
+                        Developing provably safe algorithms for multi-agent systems with applications 
+                        in coverage control and autonomous robotics.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Safety Guarantees</span>
+                        <span class="tag">Multi-Agent RL</span>
+                        <span class="tag">Coverage Control</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-racing-car"></i>
+                    </div>
+                    <h3>Competitive Policy Optimization</h3>
+                    <p>
+                        Novel approaches to multi-agent RL through competitive optimization, 
+                        with applications in autonomous racing and game theory.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Game Theory</span>
+                        <span class="tag">Policy Optimization</span>
+                        <span class="tag">Autonomous Racing</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Model Predictive Control</h3>
+                    <p>
+                        Integrating learning with control theory for safe autonomous systems, 
+                        focusing on uncertainty quantification and real-time implementation.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">MPC</span>
+                        <span class="tag">Gaussian Processes</span>
+                        <span class="tag">Bayesian Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Selected Publications</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    Recent work in top-tier venues
+                </p>
+            </div>
+            <div class="publications-list">
+                <div class="publication-item featured">
+                    <div class="pub-badge">Latest</div>
+                    <div class="pub-content">
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2307.13372.pdf" target="_blank">
+                                Submodular Reinforcement Learning
+                            </a>
+                        </h3>
+                        <p class="pub-authors">
+                            <strong>Manish Prajapat</strong>, Mojmir Mutny, Melanie Zeilinger, Andreas Krause
+                        </p>
+                        <p class="pub-venue">Under Review</p>
+                        <p class="pub-abstract">
+                            We investigate reinforcement learning problems where the reward function exhibits 
+                            submodular structure, developing practical algorithms with conditional approximation guarantees.
+                        </p>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2307.13372.pdf" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                            <a href="#" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-badge neurips">NeurIPS 2022</div>
+                    <div class="pub-content">
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2210.06380.pdf" target="_blank">
+                                Near-optimal multi-agent learning for safe coverage control
+                            </a>
+                        </h3>
+                        <p class="pub-authors">
+                            <strong>Manish Prajapat</strong>, Matteo Turchetta, Melanie Zeilinger, Andreas Krause
+                        </p>
+                        <p class="pub-venue">NeurIPS 2022</p>
+                        <p class="pub-abstract">
+                            Multi-agent reinforcement learning with safety guarantees for coverage control problems.
+                        </p>
+                        <div class="pub-metrics">
+                            <span class="metric">📊 25 citations</span>
+                            <span class="metric">⭐ Spotlight</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2210.06380.pdf" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                            <a href="#" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-badge uai">UAI 2021</div>
+                    <div class="pub-content">
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2006.10611.pdf" target="_blank">
+                                Competitive Policy Optimization
+                            </a>
+                        </h3>
+                        <p class="pub-authors">
+                            <strong>Manish Prajapat</strong>, Kamyar Azizzadenesheli, Alexander Liniger, Yisong Yue, Anima Anandkumar
+                        </p>
+                        <p class="pub-venue">UAI 2021</p>
+                        <p class="pub-abstract">
+                            Novel approach to multi-agent reinforcement learning through competitive optimization.
+                        </p>
+                        <div class="pub-metrics">
+                            <span class="metric">📊 45 citations</span>
+                            <span class="metric">🎤 Oral</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/pdf/2006.10611.pdf" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                            <a href="#" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="https://scholar.google.com/citations?user=qnobH84AAAAJ&hl=en" target="_blank" class="btn btn-outline">
+                    View All Publications
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - Present</div>
+                        <h3>Doctoral Researcher</h3>
+                        <h4>ETH AI Center, ETH Zurich</h4>
+                        <p>
+                            Research on submodular reinforcement learning and safe multi-agent systems. 
+                            Published at NeurIPS, UAI, and other top venues.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Reinforcement Learning</span>
+                            <span class="tag">AI Safety</span>
+                            <span class="tag">Control Theory</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2021</div>
+                        <h3>Research Engineer</h3>
+                        <h4>Fixposition AG, Zurich</h4>
+                        <p>
+                            Developed sensor fusion algorithms for autonomous robots using SLAM and localization systems.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">SLAM</span>
+                            <span class="tag">Sensor Fusion</span>
+                            <span class="tag">Robotics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2020</div>
+                        <h3>Master's Thesis Researcher</h3>
+                        <h4>Caltech, Pasadena</h4>
+                        <p>
+                            Research on competitive policy optimization for multi-agent RL with Prof. Yisong Yue and Prof. Anima Anandkumar.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Multi-Agent RL</span>
+                            <span class="tag">Game Theory</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017 - 2020</div>
+                        <h3>Autonomous Systems Engineer</h3>
+                        <h4>AMZ Racing, ETH Zurich</h4>
+                        <p>
+                            Developed perception and control systems for autonomous race car. 
+                            Won Formula Student Germany and Italy championships (2018).
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Autonomous Driving</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Path Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    Interested in collaboration or have questions about my research?
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:manishp@ai.ethz.ch">manishp@ai.ethz.ch</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>ETH AI Center<br>Zurich, Switzerland</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Google Scholar</h4>
+                            <a href="https://scholar.google.com/citations?user=qnobH84AAAAJ&hl=en" target="_blank">
+                                View Publications
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h4>Connect with me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/manish-pra" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://twitter.com/Manish8Prajapat" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/manish-prajapat/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Manish Prajapat. All rights reserved.</p>
+                <p>Built with ❤️ for advancing AI safety and research</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

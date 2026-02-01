@@ -7,69 +7,541 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 
-/* system typefaces */
-$serif: Lora, Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+/* Enhanced Typography */
+$serif: "Crimson Text", "PT Serif", Georgia, Times, serif !default;
+$sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$monospace: "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace !default;
 
-/* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
 
-$serif              : "PT Serif", Georgia, Times, serif;
-$sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$global-font-family: $sans-serif !default;
+$header-font-family: $sans-serif !default;
+$caption-font-family: $serif !default;
 
-// $global-font-family : $serif;
-// $header-font-family : $sans-serif-narrow;
-
-
-/* serif typefaces */
-$georgia: Georgia, serif !default;
-$times: Times, serif !default;
-$bodoni: "Bodoni MT", serif !default;
-$calisto: "Calisto MT", serif !default;
-$garamond: Garamond, serif !default;
-
-$global-font-family           : $sans-serif !default;
-$header-font-family           : $sans-serif !default;
-$caption-font-family          : $serif !default;
-
-/* type scale */
-$type-size-1: 2.441em !default; // ~39.056px
-$type-size-2: 1.953em !default; // ~31.248px
-$type-size-3: 1.563em !default; // ~25.008px
-$type-size-4: 1.25em !default; // ~20px
-$type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.6875em !default; // ~11px
-$type-size-8: 0.625em !default; // ~10px
-
-/* headline scale */
-$h-size-1: 1.563em !default; // ~25.008px
-$h-size-2: 1.25em !default; // ~20px
-$h-size-3: 1.125em !default; // ~18px
-$h-size-4: 1.0625em !default; // ~17px
-$h-size-5: 1.03125em !default; // ~16.5px
-$h-size-6: 1em !default; // ~16px
-
+/* Enhanced type scale */
+$type-size-1: 2.441em !default;
+$type-size-2: 1.953em !default;
+$type-size-3: 1.563em !default;
+$type-size-4: 1.25em !default;
+$type-size-5: 1em !default;
+$type-size-6: 0.75em !default;
+$type-size-7: 0.6875em !default;
+$type-size-8: 0.625em !default;
 
 @import "minimal-mistakes"; // main partials
 
+/* Responsive font sizes */
 html {
-    font-size: 13px; // change to whatever
+  font-size: 14px;
   
-    @include breakpoint($medium) {
-      font-size: 15px; // change to whatever
-    }
+  @include breakpoint($medium) {
+    font-size: 16px;
+  }
   
-    @include breakpoint($large) {
-      font-size: 17px; // change to whatever
-    }
+  @include breakpoint($large) {
+    font-size: 18px;
+  }
   
-    @include breakpoint($x-large) {
-      font-size: 19px; // change to whatever
+  @include breakpoint($x-large) {
+    font-size: 19px;
+  }
+}
+
+/* Custom Academic Portfolio Styles */
+
+/* Publications Grid */
+.publications-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.publication-item {
+  position: relative;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+}
+
+.pub-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  
+  &.latest {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  }
+  
+  &.neurips {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+  }
+  
+  &.uai {
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+  }
+}
+
+.authors {
+  font-style: italic;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.venue {
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.description {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Research Areas Cards */
+.research-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.research-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-left: 4px solid #667eea;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+  }
+  
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #667eea, #764ba2);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 80px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.timeline-content {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  h4 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.timeline-date {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background: #f8f9fa;
+  color: #495057;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid #dee2e6;
+}
+
+/* Awards Timeline */
+.awards-timeline {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.award-item {
+  display: flex;
+  margin-bottom: 2rem;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateX(5px);
+  }
+  
+  &.featured {
+    border-left: 5px solid #ffd700;
+    background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+  }
+}
+
+.award-year {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.award-content {
+  padding: 1.5rem;
+  flex: 1;
+  
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.award-org {
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.award-desc {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.award-impact {
+  background: #e8f4fd;
+  color: #0066cc;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border-left: 3px solid #0066cc;
+}
+
+/* Publication Styles */
+.publication-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  text-align: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  p {
+    margin: 0;
+    opacity: 0.9;
+  }
+}
+
+.publications-list {
+  margin: 2rem 0;
+}
+
+.publication-entry {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-left: 4px solid #667eea;
+  
+  &.featured {
+    background: linear-gradient(135deg, #f8f9ff, #e8f4fd);
+    border-left-color: #ffd700;
+  }
+  
+  h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        color: #667eea;
+      }
     }
   }
+}
 
-  $paragraph-indent: true
+.pub-metrics {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.metric {
+  background: #f8f9fa;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.philosophy-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  
+  h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+}
+
+/* Experience Grid */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.experience-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-top: 3px solid #667eea;
+  
+  h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Skills Matrix */
+.skills-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.skill-category {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  
+  h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      padding: 0.5rem 0;
+      color: #666;
+      border-bottom: 1px solid #f0f0f0;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .research-areas,
+  .experience-grid,
+  .skills-matrix {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline {
+    &::before {
+      left: 15px;
+    }
+  }
+  
+  .timeline-item {
+    padding-left: 50px;
+  }
+  
+  .timeline-marker {
+    left: 5px;
+  }
+  
+  .award-item {
+    flex-direction: column;
+  }
+  
+  .award-year {
+    min-width: auto;
+    text-align: center;
+  }
+}
+
+/* Enhanced buttons */
+.btn {
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+}
+
+/* Notice boxes */
+.notice {
+  border-radius: 12px;
+  border-left: 4px solid;
+  
+  &--info {
+    border-left-color: #3498db;
+    background: linear-gradient(135deg, #e8f4fd, #d6eaff);
+  }
+  
+  &--success {
+    border-left-color: #27ae60;
+    background: linear-gradient(135deg, #e8f5e8, #d4edda);
+  }
+}
+
+/* External links styling */
+.external-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+$paragraph-indent: true;
