@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="120" viewBox="0 0 180 120">
+  <rect fill="#fff3e0" width="180" height="120"/>
+  <text x="90" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#e65100">Submodular</text>
+  <text x="90" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#e65100">Reinforcement Learning</text>
+</svg>

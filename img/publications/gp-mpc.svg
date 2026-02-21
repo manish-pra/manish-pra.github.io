@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="120" viewBox="0 0 180 120">
+  <rect fill="#f3e5f5" width="180" height="120"/>
+  <text x="90" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#7b1fa2">Gaussian Process</text>
+  <text x="90" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#7b1fa2">Model Predictive Control</text>
+</svg>

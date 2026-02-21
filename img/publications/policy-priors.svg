@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="120" viewBox="0 0 180 120">
+  <rect fill="#e8f0fe" width="180" height="120"/>
+  <text x="90" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#4a6fa5">Safe Exploration</text>
+  <text x="90" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#4a6fa5">via Policy Priors</text>
+</svg>
