@@ -1,5 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="120" viewBox="0 0 180 120">
-  <rect fill="#fff3e0" width="180" height="120"/>
-  <text x="90" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="#e65100">Submodular</text>
-  <text x="90" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#e65100">Reinforcement Learning</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="180" viewBox="0 0 280 180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0"/>
+      <stop offset="100%" style="stop-color:#ffe0b2"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bg)" width="280" height="180" rx="8"/>
+  <text x="140" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#e65100">Submodular RL</text>
+  <text x="140" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5f6368">Non-Markovian Rewards</text>
+  <text x="140" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5f6368">with Diminishing Returns</text>
+  <text x="140" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#80868b">ICLR 2024 Spotlight</text>
 </svg>

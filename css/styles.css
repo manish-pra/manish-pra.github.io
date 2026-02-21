@@ -481,7 +481,7 @@ a:hover {
 
 .pub-image {
   flex-shrink: 0;
-  width: 180px;
+  width: 280px;
   display: flex;
   align-items: center;
 }
@@ -489,8 +489,9 @@ a:hover {
 .pub-image img {
   width: 100%;
   height: auto;
+  max-height: 180px;
   border-radius: 6px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .pub-title {

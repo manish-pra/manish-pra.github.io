@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="180" viewBox="0 0 280 180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd"/>
+      <stop offset="100%" style="stop-color:#bbdefb"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bg)" width="280" height="180" rx="8"/>
+  <text x="140" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1565c0">MPC Auto-Tuner</text>
+  <text x="140" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5f6368">Performance-Driven</text>
+  <text x="140" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5f6368">Constrained Optimization</text>
+  <text x="140" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#80868b">RA-L 2025</text>
+</svg>

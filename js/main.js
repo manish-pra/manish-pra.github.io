@@ -186,11 +186,20 @@
   // BibTeX Modal
   // ============================================
   const bibtexData = {
-    'policy-priors': `@inproceedings{widmer2026safe,
+    'policy-priors': `@inproceedings{wendl2026safe,
   title={Safe Exploration via Policy Priors},
-  author={Widmer, M. and Ao, Yunke and Prajapat, Manish and Prihodko, A. and Curi, S. and Krause, Andreas},
+  author={Wendl, Manuel and As, Yarden and Prajapat, Manish and Pollak, Anton and Coros, Stelian and Krause, Andreas},
   booktitle={International Conference on Learning Representations (ICLR)},
   year={2026}
+}`,
+    'mpc-autotuner': `@article{puigjaner2025performance,
+  title={Performance-Driven Constrained Optimal Auto-Tuner for MPC},
+  author={Puigjaner, Albert Gassol and Carron, Andrea and Prajapat, Manish and Krause, Andreas and Zeilinger, Melanie N.},
+  journal={IEEE Robotics and Automation Letters},
+  volume={10},
+  number={5},
+  pages={4698--4705},
+  year={2025}
 }`,
     'safe-exploration': `@article{prajapat2025safe,
   title={Safe Guaranteed Exploration for Non-linear Systems},
@@ -204,6 +213,12 @@
   booktitle={International Conference on Learning Representations (ICLR)},
   year={2024},
   note={Spotlight}
+}`,
+    'global-rl': `@inproceedings{desanti2024global,
+  title={Global Reinforcement Learning: Beyond Linear and Convex Rewards via Submodular Semi-gradient Methods},
+  author={De Santi, Gabriele and Prajapat, Manish and Krause, Andreas},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2024}
 }`,
     'gp-mpc': `@inproceedings{prajapat2024gpmpc,
   title={Towards Safe and Tractable Gaussian Process-Based MPC: Efficient Sampling within a Sequential Quadratic Programming Framework},
