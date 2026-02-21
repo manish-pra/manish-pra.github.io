@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An introduction to submodular reinforcement learning - why non-additive rewards matter and how we can develop algorithms with theoretical guarantees.">
+  <meta name="author" content="Manish Prajapat">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://manish-pra.github.io/blog/sample-post.html">
+  <meta property="og:title" content="Understanding Submodular Reinforcement Learning">
+  <meta property="og:description" content="An introduction to submodular RL - why non-additive rewards matter for real-world applications.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Manish8Prajapat">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <title>Understanding Submodular Reinforcement Learning - Manish Prajapat</title>
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link sr-only">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo" aria-label="Home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#news" class="nav-link">News</a></li>
+        <li><a href="../index.html#publications" class="nav-link">Publications</a></li>
+        <li><a href="../index.html#blog" class="nav-link">Blog</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="icon-moon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+            <span class="icon-sun" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+          </button>
+        </li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+    <article class="blog-post">
+      <div class="container">
+        <!-- Post Header -->
+        <header class="blog-post-header fade-in">
+          <p class="blog-post-date">Coming Soon</p>
+          <h1 class="blog-post-title">Understanding Submodular Reinforcement Learning</h1>
+          <p class="blog-post-meta">10 min read</p>
+        </header>
+
+        <!-- Post Content -->
+        <div class="blog-post-content fade-in">
+
+          <p>
+            Standard reinforcement learning assumes that rewards are additive over time. But many real-world problems exhibit <em>diminishing returns</em>: the value of collecting new information decreases as you accumulate more, diverse sensor placements provide more coverage than clustered ones, and exploring new states becomes less valuable when you've already seen similar ones.
+          </p>
+
+          <p>
+            This is where <strong>submodular reinforcement learning</strong> comes in. In this post, I'll explain what submodularity means, why it matters for sequential decision-making, and the key challenges in developing algorithms with provable guarantees.
+          </p>
+
+          <h2>What is Submodularity?</h2>
+
+          <p>
+            A set function f is <em>submodular</em> if it exhibits the diminishing returns property. Formally, for any sets A, B with A contained in B, and any element x not in B:
+          </p>
+
+          <blockquote>
+            <p>
+              f(A + x) - f(A) &ge; f(B + x) - f(B)
+            </p>
+          </blockquote>
+
+          <p>
+            In words: adding an element to a smaller set provides at least as much marginal value as adding it to a larger set. This captures the intuition that "the first few observations are more valuable than later ones."
+          </p>
+
+          <h3>Examples in Practice</h3>
+
+          <p>
+            Submodular objectives appear in numerous applications:
+          </p>
+
+          <ul>
+            <li><strong>Sensor placement:</strong> Maximizing information coverage while placing sensors</li>
+            <li><strong>Experiment design:</strong> Selecting informative experiments for scientific discovery</li>
+            <li><strong>Informative path planning:</strong> Routing robots to maximize area coverage or data collection</li>
+            <li><strong>Feature selection:</strong> Choosing diverse features for machine learning models</li>
+          </ul>
+
+          <h2>The Challenge: Sequential Decisions</h2>
+
+          <p>
+            Traditional submodular optimization assumes you make all decisions at once. But many real problems are <em>sequential</em>: you take an action, observe an outcome, then decide what to do next. This creates a fundamental tension.
+          </p>
+
+          <p>
+            Consider a robot exploring an environment. At each step, it must decide where to move based on what it has observed so far. The total information gained is a submodular function of all visited locations, but the robot must commit to each location sequentially without knowing what it will find.
+          </p>
+
+          <pre><code># The key insight: actions have two effects
+def take_action(state, action):
+    # 1. Immediate effect on the environment
+    next_state = transition(state, action)
+
+    # 2. Contribution to the accumulated set
+    #    (affects future marginal values)
+    visited_locations.add(action)
+
+    # The submodular reward depends on ALL
+    # visited locations, not just the current one
+    return next_state</code></pre>
+
+          <h2>Why Standard RL Fails</h2>
+
+          <p>
+            Standard RL algorithms assume rewards decompose additively: the total return is the sum of individual rewards. This enables powerful techniques like dynamic programming and temporal difference learning.
+          </p>
+
+          <p>
+            But with submodular objectives, the reward at time t depends on all previous actions, breaking the Markov assumption. The value of visiting a location depends not just on the current state, but on the entire history of visited locations.
+          </p>
+
+          <h3>Key Technical Challenges</h3>
+
+          <ul>
+            <li><strong>Non-Markovian rewards:</strong> The reward depends on the full trajectory, not just the current state-action pair</li>
+            <li><strong>Computational hardness:</strong> Even with known dynamics, the problem is NP-Hard to solve optimally</li>
+            <li><strong>Exploration-exploitation:</strong> How do you explore efficiently when rewards are non-additive?</li>
+          </ul>
+
+          <h2>Our Approach: Approximate Optimality</h2>
+
+          <p>
+            Since optimal solutions are computationally intractable, we focus on algorithms with <em>approximation guarantees</em>. The key insight is to leverage the structure of submodular functions to design greedy-like algorithms that provably achieve a constant fraction of the optimal value.
+          </p>
+
+          <p>
+            The classical result for submodular maximization shows that the greedy algorithm achieves a (1-1/e) approximation. Our work extends this to the sequential setting, developing algorithms that maintain similar guarantees while handling:
+          </p>
+
+          <ul>
+            <li>Unknown transition dynamics (learning from interaction)</li>
+            <li>Continuous state and action spaces</li>
+            <li>Safety constraints on the exploration process</li>
+          </ul>
+
+          <h2>Looking Forward</h2>
+
+          <p>
+            Submodular RL opens up new possibilities for sequential decision-making with complex objectives. Beyond the applications I've mentioned, it connects to broader questions about how to design AI systems that can reason about diminishing returns, diversity, and coverage.
+          </p>
+
+          <p>
+            In future posts, I'll dive deeper into the technical details of our algorithms and discuss connections to related problems like safe exploration and multi-agent coordination.
+          </p>
+
+          <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--color-border);">
+
+          <p><em>For the full technical details, check out our <a href="https://arxiv.org/pdf/2307.13372.pdf">paper on arXiv</a>.</em></p>
+        </div>
+
+        <!-- Post Navigation -->
+        <nav class="blog-post-nav fade-in">
+          <a href="../index.html#blog"><span aria-hidden="true">&larr;</span> Back to all posts</a>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">&copy; Manish Prajapat &middot; 2026</p>
+        <p class="footer-tagline">Built with curiosity and caffeine</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
