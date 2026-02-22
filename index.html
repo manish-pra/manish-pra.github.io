@@ -196,12 +196,10 @@
         <!-- Filters -->
         <div class="pub-filters fade-in">
           <button class="pub-filter active" data-filter="all">All</button>
-          <button class="pub-filter" data-filter="2026">2026</button>
-          <button class="pub-filter" data-filter="2025">2025</button>
-          <button class="pub-filter" data-filter="2024">2024</button>
-          <button class="pub-filter" data-filter="2022">2022</button>
-          <button class="pub-filter" data-filter="2021">2021</button>
-          <button class="pub-filter" data-filter="2020">2020</button>
+          <button class="pub-filter" data-filter="safety">Safe Learning</button>
+          <button class="pub-filter" data-filter="rl">Reinforcement Learning</button>
+          <button class="pub-filter" data-filter="control">Control</button>
+          <button class="pub-filter" data-filter="robotics">Robotics</button>
         </div>
 
         <div class="publications-list">
@@ -242,7 +240,48 @@
               </div>
             </div>
             <div class="pub-image">
-              <img src="img/publications/mpc-autotuner.svg" alt="MPC Auto-Tuner">
+              <img src="img/publications/mpc-autotuner.png" alt="MPC Auto-Tuner">
+            </div>
+          </article>
+
+          <!-- Publication: Safe Guaranteed Dynamics Exploration -->
+          <article class="pub-card fade-in" data-year="2025" data-topic="safety">
+            <div class="pub-content">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2509.16650" target="_blank" rel="noopener">Safe Guaranteed Dynamics Exploration with Probabilistic Models</a>
+              </h3>
+              <p class="pub-authors">
+                <span class="me">M. Prajapat</span>, J. Köhler, M. Zeilinger, A. Krause
+              </p>
+              <p class="pub-venue">Preprint 2025</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2509.16650" class="pub-link" target="_blank" rel="noopener">PDF</a>
+                <button class="pub-link" onclick="openBibtexModal('safe-dynamics')">BibTeX</button>
+              </div>
+            </div>
+            <div class="pub-image">
+              <img src="img/publications/safe-dynamics.png" alt="Safe Dynamics Exploration">
+            </div>
+          </article>
+
+          <!-- Publication: Finite-Sample Reachability -->
+          <article class="pub-card fade-in" data-year="2025" data-topic="control">
+            <div class="pub-content">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2505.07594" target="_blank" rel="noopener">Finite-Sample-Based Reachability for Safe Control with GP Dynamics</a>
+              </h3>
+              <p class="pub-authors">
+                <span class="me">M. Prajapat</span>, J. Köhler, A. Lahr, A. Krause, M. Zeilinger
+              </p>
+              <p class="pub-venue">Preprint 2025</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2505.07594" class="pub-link" target="_blank" rel="noopener">PDF</a>
+                <a href="https://github.com/manish-pra/sampling-gpmpc" class="pub-link" target="_blank" rel="noopener">Code</a>
+                <button class="pub-link" onclick="openBibtexModal('gp-reachability')">BibTeX</button>
+              </div>
+            </div>
+            <div class="pub-image">
+              <img src="img/publications/gp-reachability.gif" alt="GP Reachability">
             </div>
           </article>
 
@@ -264,6 +303,7 @@
             </div>
             <div class="pub-image">
               <img src="img/publications/safe-exploration.gif" alt="Safe Exploration">
+              <img src="img/publications/safe-exploration-2.gif" alt="Safe Exploration Obstacle" style="height: 160px; width: 220px; object-fit: fill;">
             </div>
           </article>
 
@@ -284,7 +324,7 @@
               </div>
             </div>
             <div class="pub-image">
-              <img src="img/publications/submodular-rl.svg" alt="Submodular RL">
+              <img src="img/publications/submodular-rl.png" alt="Submodular RL">
             </div>
           </article>
 
@@ -295,7 +335,7 @@
                 <a href="https://arxiv.org/abs/2407.09905" target="_blank" rel="noopener">Global Reinforcement Learning: Beyond Linear and Convex Rewards via Submodular Semi-gradient Methods</a>
               </h3>
               <p class="pub-authors">
-                G. De Santi, <span class="me">M. Prajapat</span>, A. Krause
+                G. De Santi*, <span class="me">M. Prajapat</span>*, A. Krause
               </p>
               <p class="pub-venue">ICML 2024</p>
               <div class="pub-links">
@@ -304,7 +344,27 @@
               </div>
             </div>
             <div class="pub-image">
-              <img src="img/publications/global-rl.svg" alt="Global RL">
+              <img src="img/publications/global-rl.png" alt="Global RL">
+            </div>
+          </article>
+
+          <!-- Publication: SMART -->
+          <article class="pub-card fade-in" data-year="2024" data-topic="rl">
+            <div class="pub-content">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2410.16128" target="_blank" rel="noopener">SMART: Self-learning Meta-strategy Agent for Reasoning Tasks</a>
+              </h3>
+              <p class="pub-authors">
+                R. Liu*, K. Shridhar*, <span class="me">M. Prajapat</span>, P. Xia, M. Sachan
+              </p>
+              <p class="pub-venue">Preprint 2024</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2410.16128" class="pub-link" target="_blank" rel="noopener">PDF</a>
+                <button class="pub-link" onclick="openBibtexModal('smart')">BibTeX</button>
+              </div>
+            </div>
+            <div class="pub-image">
+              <img src="img/publications/smart.png" alt="SMART Agent">
             </div>
           </article>
 
@@ -324,7 +384,7 @@
               </div>
             </div>
             <div class="pub-image">
-              <img src="img/publications/gp-mpc.svg" alt="GP-MPC">
+              <img src="img/publications/gp-mpc.png" alt="GP-MPC" style="height: 140px; width: auto;">
             </div>
           </article>
 
@@ -388,7 +448,7 @@
               </div>
             </div>
             <div class="pub-image">
-              <img src="img/publications/amz.jpg" alt="AMZ Driverless Racing Car">
+              <img src="img/publications/amz.webp" alt="AMZ Driverless Racing Car">
             </div>
           </article>
 

@@ -481,15 +481,14 @@ a:hover {
 
 .pub-image {
   flex-shrink: 0;
-  width: 280px;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .pub-image img {
-  width: 100%;
-  height: auto;
-  max-height: 180px;
+  height: 160px;
+  width: auto;
   border-radius: 6px;
   object-fit: contain;
 }
@@ -1044,10 +1043,11 @@ a:hover {
   .pub-image {
     width: 100%;
     margin-bottom: var(--spacing-xs);
+    justify-content: center;
   }
 
   .pub-image img {
-    max-height: 150px;
+    height: 120px;
     width: auto;
     max-width: 100%;
   }

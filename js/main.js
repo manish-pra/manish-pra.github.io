@@ -201,6 +201,24 @@
   pages={4698--4705},
   year={2025}
 }`,
+    'safe-dynamics': `@article{prajapat2025safedynamics,
+  title={Safe Guaranteed Dynamics Exploration with Probabilistic Models},
+  author={Prajapat, Manish and K{\"o}hler, Johannes and Zeilinger, Melanie N. and Krause, Andreas},
+  journal={arXiv preprint arXiv:2509.16650},
+  year={2025}
+}`,
+    'gp-reachability': `@article{prajapat2025reachability,
+  title={Finite-Sample-Based Reachability for Safe Control with Gaussian Process Dynamics},
+  author={Prajapat, Manish and K{\"o}hler, Johannes and Lahr, Amon and Krause, Andreas and Zeilinger, Melanie N.},
+  journal={arXiv preprint arXiv:2505.07594},
+  year={2025}
+}`,
+    'smart': `@article{liu2024smart,
+  title={SMART: Self-learning Meta-strategy Agent for Reasoning Tasks},
+  author={Liu, Rongxing and Shridhar, Kumar and Prajapat, Manish and Xia, Patrick and Sachan, Mrinmaya},
+  journal={arXiv preprint arXiv:2410.16128},
+  year={2024}
+}`,
     'safe-exploration': `@article{prajapat2025safe,
   title={Safe Guaranteed Exploration for Non-linear Systems},
   author={Prajapat, Manish and K{\"o}hler, Johannes and Turchetta, Matteo and Krause, Andreas and Zeilinger, Melanie N.},
